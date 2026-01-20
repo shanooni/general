@@ -85,7 +85,7 @@ async def upload_file(file: UploadFile = File(...)):
             prediction = apredictor(audio_bytes)
             result = {
                 "audio_name": file.filename,
-                "prediction": prediction
+                "prediction class": prediction
             }
             return result
         except Exception as e:
